@@ -95,6 +95,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 3em;
     text-transform: uppercase;
 }
+.hero.row {
+    display: initial;
+}
 #page-profile {
     padding: 75px 0;
     background: #fff;
@@ -108,6 +111,26 @@ h1, h2, h3, h4, h5, h6 {
     padding: 75px 0;
     background: #f7f7f7;
     text-align: center;
+}
+
+#page-skills i {
+    font-size: 10rem;
+}
+.mt-4 {
+    margin-top: 1.5rem!important;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
 }
 #page-education {
     padding: 75px 0;
@@ -167,6 +190,9 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     color: #fff;
     padding-top: 30%;
+}
+.row.portfolio {
+    display: initial;
 }
 .isotope-item {
     z-index: 2;
@@ -506,6 +532,32 @@ label.valid {
         margin: 0 auto 20px auto;
     }
 }
+
+@media (min-width: 768px) {
+    .col-md-3 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+    max-width: 540px;
+    }
+    #page-skills i {
+        font-size: 4rem;
+    }
+}
+
+@media (min-width: 576px){
+    .col-sm-4 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+}
+
 @media (max-width: 479px) {
     #page-welcome header h1 {
         font-size: 2em;
@@ -519,9 +571,6 @@ label.valid {
     }
     .section-header p {
         font-size: 1.2em;
-    }
-    #page-skills {
-        text-align: center;
     }
     #grid {
         text-align: center;
