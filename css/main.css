@@ -107,6 +107,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 225px;
     margin: 0 20px 20px 0;
 }
+.aboutP1, .aboutP2 {
+    font-size: 1.25em;
+}
 #page-skills {
     padding: 75px 0;
     background: #f7f7f7;
@@ -132,14 +135,7 @@ h1, h2, h3, h4, h5, h6 {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
 }
-#page-education {
-    padding: 75px 0;
-    background: #fff;
-}
-#page-experience {
-    padding: 75px 0;
-    background: #f7f7f7;
-}
+
 #page-portfolio {
     padding: 75px 0;
     background: #fff;
@@ -548,9 +544,6 @@ label.valid {
     #page-skills i {
         font-size: 4rem;
     }
-}
-
-@media (min-width: 576px){
     .col-sm-4 {
         -ms-flex: 0 0 33.333333%;
         flex: 0 0 33.333333%;
