@@ -28,7 +28,7 @@ if(empty($message['message'])){
     $output['message'][] = 'missing message key';
 }
 
-$message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
+// $message['subject'] = filter_var($_POST['subject'], FILTER_SANITIZE_STRING);
 // if(empty($message['subject'])){
 //     $output['success'] = false;
 //     $output['message'][] = 'missing subject key';
