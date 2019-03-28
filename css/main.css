@@ -146,6 +146,16 @@ h1, h2, h3, h4, h5, h6 {
 #page-contact .contact-info p {
     font-size: 1.2em;
 }
+#contact-info {
+    width: 100%;
+}
+.social-links {
+    display: flex;
+    width: 75%;
+    margin: auto;
+    justify-content: space-around;
+}
+
 /* ==========================================================================
    Portfolio   
    ========================================================================== */
@@ -157,6 +167,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .center-pills {
     display: inline-block;
+}
+#grid {
+    text-align: center;
+    width: 66%;
+    margin: auto;
 }
 #grid .mix {
     width: 200px;
@@ -489,6 +504,9 @@ label.valid {
 .btn-dribbble:hover {
     color: #D92C85;
 }
+.btn-github:hover {
+    color: #000;
+}
 .btn-instagram:hover {
     color: #BAB1A8;
 }
@@ -529,11 +547,33 @@ label.valid {
     }
 }
 
+@media (min-width: 576px) {
+    #grid {
+        width: 90%;
+    }
+}
+
 @media (min-width: 768px) {
     .col-md-3 {
         -ms-flex: 0 0 25%;
         flex: 0 0 25%;
         max-width: 25%;
+    }
+    #grid {
+        width: 100%;
+    }
+}
+@media (min-width: 992px) {
+    #grid {
+        text-align: center;
+        width: 75%;
+        margin: auto;
+    }
+}
+
+@media (min-width: 1200px) {
+    #grid {
+        width: 60%;
     }
 }
 
@@ -567,6 +607,8 @@ label.valid {
     }
     #grid {
         text-align: center;
+        width: 66%;
+        margin: auto;
     }
     #page-profile .profile {
         margin: 0 auto 20px auto;

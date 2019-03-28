@@ -223,30 +223,30 @@
                     <div class="spacer"></div>
                 </header>
 
-                <div class="container">
-                    <ul id="grid" class="grid-wrapper">
-                        <li class="mix web">
+                <div class="container mix-container">
+                    <div id="grid" class="grid-wrapper">
+                        <div class="mix web">
                             <a href="img/portfolio/large/snack_seriously.JPG">
                                 <div class="overlay"><i class="fa fa-search"></i>
                                 </div><img src="img/portfolio/small/snack_seriously.JPG" alt="SnackSeriously.com">
                                 <p>SnackSeriously.com</p>
                             </a>
-                        </li>
-                        <li class="mix design">
+                        </div>
+                        <div class="mix design">
                             <a href="img/portfolio/large/calculator.JPG">
                                 <div class="overlay"><i class="fa fa-search"></i>
                                 </div><img src="img/portfolio/small/calculator.JPG" alt="Calculator">
                                 <p>Calculator</p>
                             </a>
-                        </li>
-                        <li class="mix design">
+                        </div>
+                        <div class="mix design">
                             <a href="img/portfolio/large/match_the_cats.JPG">
                                 <div class="overlay"><i class="fa fa-search"></i>
                                 </div><img src="img/portfolio/small/match_the_cats.JPG" alt="Match the Cats - Memory Match">
                                 <p>Match the Cats</p>
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -260,16 +260,32 @@
                 <div class="spacer"></div>
             </header>
             <div class="row">
-                <div class="col-sm-5 contact-info">
-                    <h3>Contact Info</h3>
-                    <p><i class="fa fa-map-marker"></i> Huntington Beach, Ca </p>
-                    <p><i class="fa fa-envelope-o"></i> loupruittwork@gmail.com</p>
+                <div class="lead scrollimation text-center" id="contact-info">
+                    <div class="social-links bg-info">
+                        <a id="contact-link" href="mailto:loupruitt.dev@gmail.com" target="_blank">
+                            <i id="contact-link-icon" class="fa fa-envelope fa-3x mr-3"></i>
+                        </a>
+                        <a id="contact-link" href="tel://+17142318647" target="_blank">
+                            <i id="contact-link-icon" class="fa fa-phone fa-3x ml-3" alt="phone"></i>
+                        </a>								
+                    </div>
+                    <p>Feel free to contact me via email or phone.</p>
+                    <p>Location:  Orange County, CA</p>
                 </div>
+                <!-- <div class="col-sm-5 contact-info">
+                    <h3>Contact Info</h3>
+                    <div>
+                        <a href="loupruitt.dev@gmail.com" target="_blank">
+                            <i id="contact-link-icon" class="fa fa-envelope"></i>
+                        </a>
+                        <a href=""></a>
+                    </div>
+                </div> -->
 
-                <div class="col-sm-7">
-                    <h3>Get in Touch</h3>
+                <!-- <div class="col-sm-7"> -->
+                    <!-- <h3>Get in Touch</h3> -->
                     <!-- Configure the contact form by adding your email address on mail/contact_me.php line 17 -->
-                    <form class="form-horizontal" id="contactForm" action="php_mailer/mail_handler.php" method="post"> <!--CHECK HERE IF ACTION IS NEEDED-->
+                    <!-- <form class="form-horizontal" id="contactForm" action="php_mailer/mail_handler.php" method="post">
                         <div class="control-group">
                             <label class="control-label" for="name">Name</label>
                             <div class="controls">
@@ -295,9 +311,9 @@
                         <div id="success"></div>
                             <button type="submit" class="btn btn-default btn-lg btn-block">Submit Message</button>
                         </div>
-                    </form>
+                    </form> -->
                     <!-- End contact-form -->
-                </div>
+                <!-- </div> -->
             </div>
             <!-- End row -->
 
@@ -317,7 +333,7 @@
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/waypoints.min.js"></script>
     <script src="js/jqBootstrapValidation.js"></script>
-    <!-- <script src="php_mailer/mail_handler.php"></script> -->
+    <script src="php_mailer/mail_handler.php"></script>
     <script src="js/main.js"></script>
 	
 </body>
